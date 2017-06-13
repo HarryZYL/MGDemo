@@ -6,7 +6,7 @@
 * Config
 * Extension
 
-###Controller             
+### Controller             
 1架构tableView的基本结构     
 2展示不同cell的不同页面布局     
 3调用网络请求接口    
