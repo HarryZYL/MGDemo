@@ -12,6 +12,11 @@
 		4A57A5DB1EEF77EA0099D640 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A57A5D91EEF77EA0099D640 /* Main.storyboard */; };
 		4A57A5DD1EEF77EA0099D640 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A57A5DC1EEF77EA0099D640 /* Assets.xcassets */; };
 		4A57A5E01EEF77EA0099D640 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A57A5DE1EEF77EA0099D640 /* LaunchScreen.storyboard */; };
+		4A57A5E81EEF78FE0099D640 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A57A5E71EEF78FE0099D640 /* TableViewCell.swift */; };
+		4A57A5EE1EEF7C360099D640 /* Macro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A57A5ED1EEF7C360099D640 /* Macro.swift */; };
+		4A57A5F31EEF80E70099D640 /* UILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A57A5F21EEF80E70099D640 /* UILabel.swift */; };
+		4A57A5F51EEF8AD10099D640 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A57A5F41EEF8AD10099D640 /* Model.swift */; };
+		4A57A5F81EEF8C6B0099D640 /* HttpRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A57A5F71EEF8C6B0099D640 /* HttpRequest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +27,11 @@
 		4A57A5DC1EEF77EA0099D640 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4A57A5DF1EEF77EA0099D640 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4A57A5E11EEF77EA0099D640 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4A57A5E71EEF78FE0099D640 /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TableViewCell.swift; path = View/TableViewCell.swift; sourceTree = "<group>"; };
+		4A57A5ED1EEF7C360099D640 /* Macro.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Macro.swift; path = Config/Macro.swift; sourceTree = "<group>"; };
+		4A57A5F21EEF80E70099D640 /* UILabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UILabel.swift; path = Extension/UILabel.swift; sourceTree = "<group>"; };
+		4A57A5F41EEF8AD10099D640 /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Model.swift; path = Model/Model.swift; sourceTree = "<group>"; };
+		4A57A5F71EEF8C6B0099D640 /* HttpRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HttpRequest.swift; path = Request/HttpRequest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +64,75 @@
 		4A57A5D41EEF77EA0099D640 /* MGDemo */ = {
 			isa = PBXGroup;
 			children = (
+				4A57A5F91EEF8C780099D640 /* Request */,
+				4A57A5F11EEF7C690099D640 /* Controller */,
+				4A57A5E91EEF793F0099D640 /* View */,
+				4A57A5F61EEF8AF10099D640 /* Model */,
+				4A57A5EC1EEF7B130099D640 /* Extension */,
+				4A57A5EF1EEF7C3D0099D640 /* Config */,
+				4A57A5F01EEF7C540099D640 /* resource */,
+			);
+			path = MGDemo;
+			sourceTree = "<group>";
+		};
+		4A57A5E91EEF793F0099D640 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4A57A5E71EEF78FE0099D640 /* TableViewCell.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		4A57A5EC1EEF7B130099D640 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				4A57A5F21EEF80E70099D640 /* UILabel.swift */,
+			);
+			name = Extension;
+			sourceTree = "<group>";
+		};
+		4A57A5EF1EEF7C3D0099D640 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				4A57A5ED1EEF7C360099D640 /* Macro.swift */,
+			);
+			name = Config;
+			sourceTree = "<group>";
+		};
+		4A57A5F01EEF7C540099D640 /* resource */ = {
+			isa = PBXGroup;
+			children = (
 				4A57A5D51EEF77EA0099D640 /* AppDelegate.swift */,
-				4A57A5D71EEF77EA0099D640 /* ViewController.swift */,
 				4A57A5D91EEF77EA0099D640 /* Main.storyboard */,
 				4A57A5DC1EEF77EA0099D640 /* Assets.xcassets */,
 				4A57A5DE1EEF77EA0099D640 /* LaunchScreen.storyboard */,
 				4A57A5E11EEF77EA0099D640 /* Info.plist */,
 			);
-			path = MGDemo;
+			name = resource;
+			sourceTree = "<group>";
+		};
+		4A57A5F11EEF7C690099D640 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4A57A5D71EEF77EA0099D640 /* ViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		4A57A5F61EEF8AF10099D640 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4A57A5F41EEF8AD10099D640 /* Model.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		4A57A5F91EEF8C780099D640 /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				4A57A5F71EEF8C6B0099D640 /* HttpRequest.swift */,
+			);
+			name = Request;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +208,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A57A5F51EEF8AD10099D640 /* Model.swift in Sources */,
+				4A57A5E81EEF78FE0099D640 /* TableViewCell.swift in Sources */,
 				4A57A5D81EEF77EA0099D640 /* ViewController.swift in Sources */,
 				4A57A5D61EEF77EA0099D640 /* AppDelegate.swift in Sources */,
+				4A57A5F81EEF8C6B0099D640 /* HttpRequest.swift in Sources */,
+				4A57A5F31EEF80E70099D640 /* UILabel.swift in Sources */,
+				4A57A5EE1EEF7C360099D640 /* Macro.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
